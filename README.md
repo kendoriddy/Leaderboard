@@ -1,57 +1,68 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# leaderboard
+The leaderboard website displays scores submitted by different players. It also allows you to submit your score
 
-> Description the project.
 
+![screenshot](leaderbord.png)
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML5, Javascript
+- CSS3
+- Linters
+- Webpack
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+
+<!-- [Live Demo Link](https://kendoriddy.github.io/Leaderboard/) -->
+
+
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+## Prerequisites
 
-### Setup
+- Have a good knowledge on how to parse UI designs
+- Have VSCode or other text editor installed. [Link to download VSCode](https://code.visualstudio.com/download)
+- Install node package. [Link to download node](https://nodejs.org/en/download/)
+- Have git installed.[Link to download git](https://git-scm.com/downloads)
+- Create a github repository.
 
-### Install
+## Setup
 
-### Usage
+- git clone https://github.com/Lizdev-05/leaderboard.git
+- cd leaderboard/
+  -Follow the HTML-CSS linter confuguration to docs to setup linters [Link to Microverse linter docs](https://github.com/vickymarz/linters-config/tree/master/html-css-js)
+- Setup webpack configuration to bundle up your javascript modules. Follow the instructions from the [getting started guide](https://webpack.js.org/guides/getting-started/#basic-setup) to set up the basics
 
-### Run tests
+## Run tests
 
-### Deployment
+For tracking linters errors locally, you need to follow these steps:
 
+- For tracking linter errors in HTML file run:
+  `npx hint .`
+- For tracking linter errors in CSS file run:
+  `npx stylelint "**/*.{css,scss}"`
+- For tracking linter errors in Javascript file run:
+  `npx eslint .`
 
+## Deployment
+
+- Use GitHub pages to deploy website
+- For more information about publishing sources, see [About github pages](https://pages.github.com/)
 
 ## Authors
 
-👤 **Author1**
+👤 **Kehinde Ridwan Onifade**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/kendoriddy)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kehindeonifade/)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -64,12 +75,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse
+- Code Reviewers
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./MIT.md) licensed.
