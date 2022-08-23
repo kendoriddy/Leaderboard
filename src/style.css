@@ -25,14 +25,23 @@ ul {
   justify-content: space-between;
 }
 
+form button {
+  float: right;
+  padding: 5px 15px;
+  margin-right: 8px;
+  box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.47);
+}
+
 .pre-scores button {
   background-color: #fff;
   margin-right: 8px;
   padding: 10px 20px;
   border: none;
-  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.47);
-  -webkit-box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.47);
-  -moz-box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.47);
+  box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.47);
 }
 
 .score-board {
@@ -40,8 +49,20 @@ ul {
   border: 1px solid #000;
 }
 
+li:nth-child(even) {
+  background-color: #f2f2f2;
+  color: #2b2b2b;
+  width: 100%;
+  padding: 0;
+}
+
+li:nth-child(odd) {
+  background-color: #2b2b2b;
+  color: #f2f2f2;
+}
+
 .score-board ul li {
-    padding: 5px;
+  padding: 5px;
 }
 
 input {
@@ -60,32 +81,11 @@ form {
   margin-top: 30px;
 }
 
-form button {
-  float: right;
-  padding: 5px 15px;
-  margin-right: 8px;
-  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.47);
-  -webkit-box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.47);
-  -moz-box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.47);
-}
-
-li:nth-child(even) {
-  background-color: #f2f2f2;
-  color: #2b2b2b;
-  width: 100%;
-  padding: 0px;
-}
-
-li:nth-child(odd) {
-  background-color: #2b2b2b;
-  color: #f2f2f2;
-}
-
 @media screen and (max-width: 768px) {
-    .board-body {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 20px;
-        gap: 10vw;
-      }
+  .board-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 10vw;
+  }
 }
