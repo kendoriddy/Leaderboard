@@ -5,7 +5,6 @@ const scoreList = document.querySelector('.score-board');
 const displayScore = async () => {
   const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ncT92zkPgEUg4RfpDGEA/scores');
   const data = await response.json();
-  console.log(data);
   let dataArray = data.result;
   dataArray = dataArray.sort((a, b) => b.score - a.score);
   scoreList.innerHTML = '';
