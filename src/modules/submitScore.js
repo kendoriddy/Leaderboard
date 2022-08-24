@@ -1,13 +1,10 @@
 const userName = document.querySelector('.name');
 const userScore = document.querySelector('.score');
-const errorMsg = document.querySelector('small');
 
 const submitScore = async () => {
   const nameValue = userName.value;
   const scoreValue = userScore.value;
-  if (nameValue === '' || scoreValue === '') {
-    errorMsg.innerHTML = 'All fields are required';
-  } else {
+  if (nameValue !== '' || scoreValue !== '') {
     await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ncT92zkPgEUg4RfpDGEA/scores', {
       method: 'POST',
       headers: {

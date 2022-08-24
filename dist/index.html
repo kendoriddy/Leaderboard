@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpack Exercise</title>
-<script defer src="main.js"></script></head>
-<body>
-    <h1>Hello World!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboard</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <h1>Leaderboard</h1>
+      </div>
+      <main class="board-container">
+        <div class="board-body">
+          <div class="show-score">
+            <div class="pre-scores">
+              <h4>Recent Scores</h4>
+              <button id="refresh" type="reset">Refresh</button>
+            </div>
+            <div class="score-board"></div>
+          </div>
+          <div class="add-score">
+            <h4>Add your score</h4>
+            <form>
+              <p>N.B: All fields are required</p>
+              <input type="text" class="name" placeholder="Input your name" required />
+              <input type="number" class="score" placeholder="Input your score" required />
+              <button id="submit-btn" type="submit">Submit</button>
+            </form>
+          </div>
+          <footer><p>© RideOnOne 2022</p></footer>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
