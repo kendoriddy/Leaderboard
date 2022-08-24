@@ -16,25 +16,17 @@
           <div class="show-score">
             <div class="pre-scores">
               <h4>Recent Scores</h4>
-              <button type="reset">Refresh</button>
+              <button id="refresh" type="reset">Refresh</button>
             </div>
-            <div class="score-board">
-              <ul>
-                <li>Name: 100</li>
-                <li>Name: 40</li>
-                <li>Name: 36</li>
-                <li>Name: 64</li>
-                <li>Name: 59</li>
-                <li>Name:60</li>
-              </ul>
-            </div>
+            <div class="score-board"></div>
           </div>
           <div class="add-score">
             <h4>Add your score</h4>
             <form>
-              <input type="text" placeholder="Input your name" />
-              <input type="text" placeholder="Input your score" />
-              <button type="submit">Submit</button>
+              <p>N.B: All fields are required</p>
+              <input type="text" class="name" placeholder="Input your name" required />
+              <input type="number" class="score" placeholder="Input your score" required />
+              <button id="submit-btn" type="submit">Submit</button>
             </form>
           </div>
           <footer><p>© RideOnOne 2022</p></footer>
