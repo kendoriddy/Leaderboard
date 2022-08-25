@@ -4,12 +4,34 @@
   box-sizing: border-box;
 }
 
+:root {
+  --wine: rgb(207, 73, 73);
+  --milky: #f6f6f6;
+}
+
+body {
+  background-color: var(--milky);
+}
+
 ul {
   list-style-type: none;
 }
 
 .container {
-  padding: 20px 10px;
+  padding: 0;
+}
+
+.logo {
+  color: #fff;
+  background-color: var(--wine);
+  padding: 10px 20px;
+}
+
+h4 {
+  color: var(--wine);
+  line-height: 20px;
+  font-size: 2rem;
+  font-weight: 800;
 }
 
 .board-body {
@@ -17,6 +39,7 @@ ul {
   grid-template-columns: 1fr 1fr;
   padding: 80px;
   gap: 10vw;
+  border: 1px solid var(--wine);
 }
 
 .pre-scores {
@@ -26,9 +49,11 @@ ul {
 }
 
 form button {
+  border-radius: 5px;
+  background-color: #fff;
   float: right;
-  padding: 5px 15px;
   margin-right: 8px;
+  padding: 10px 20px;
   box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.47);
   -webkit-box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.47);
   -moz-box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.47);
@@ -36,10 +61,10 @@ form button {
 }
 
 .pre-scores button {
+  border-radius: 5px;
   background-color: #fff;
   margin-right: 8px;
   padding: 10px 20px;
-  border: none;
   box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.47);
   -webkit-box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.47);
   -moz-box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.47);
@@ -49,6 +74,7 @@ form button {
 .score-board {
   margin-top: 20px;
   border: 1px solid #000;
+  border-radius: 5px;
 }
 
 .even {
@@ -64,7 +90,8 @@ form button {
 }
 
 .score-board ul li {
-  padding: 5px;
+  padding: 15px;
+  font-size: 1.5rem;
 }
 
 input {
@@ -74,15 +101,22 @@ input {
   border: 1px solid #000;
   outline: none;
   padding-left: 10px;
+  border-radius: 5px;
 }
 
 form {
   margin-top: 30px;
 }
 
-.error {
-  color: red;
-  font-size: 12px;
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--wine);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
 
 @media screen and (max-width: 768px) {
