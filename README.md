@@ -16,7 +16,7 @@ The leaderboard website displays scores submitted by different players. It also 
 ## Live Demo
 
 
-<!-- [Live Demo Link](https://kendoriddy.github.io/Leaderboard/) -->
+[Live Demo Link](https://kendoriddy.github.io/Leaderboard/)
 
 
 
@@ -35,9 +35,9 @@ To get a local copy up and running follow these simple example steps.
 
 ## Setup
 
-- git clone https://github.com/Lizdev-05/leaderboard.git
-- cd leaderboard/
-  -Follow the HTML-CSS linter confuguration to docs to setup linters [Link to Microverse linter docs](https://github.com/vickymarz/linters-config/tree/master/html-css-js)
+- git clone https://github.com/kendoriddy/Leaderboard.git
+- cd Leaderboard/
+  -Follow the HTML-CSS linter configuration to docs to setup linters [Link to Microverse linter docs](https://github.com/kendoriddy/linters-config/tree/master/html-css-js)
 - Setup webpack configuration to bundle up your javascript modules. Follow the instructions from the [getting started guide](https://webpack.js.org/guides/getting-started/#basic-setup) to set up the basics
 
 ## Run tests
