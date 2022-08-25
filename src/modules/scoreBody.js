@@ -3,7 +3,7 @@ const scoreBoard = document.querySelector('.score-board');
 const scoreBody = (name, score) => {
   const ul = document.createElement('ul');
   const li = document.createElement('li');
-  li.innerHTML = `${name} ${score}`;
+  li.innerHTML = `${name}: ${score}`;
 
   ul.appendChild(li);
   scoreBoard.appendChild(ul);
