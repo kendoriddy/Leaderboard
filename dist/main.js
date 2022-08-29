@@ -130,6 +130,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/modules/env.js":
+/*!****************************!*\
+  !*** ./src/modules/env.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"base\": () => (/* binding */ base),\n/* harmony export */   \"gameId\": () => (/* binding */ gameId)\n/* harmony export */ });\nconst base = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';\nconst gameId = 'ncT92zkPgEUg4RfpDGEA/scores';\n\n\n//# sourceURL=webpack://webpack/./src/modules/env.js?");
+
+/***/ }),
+
 /***/ "./src/modules/scoreBody.js":
 /*!**********************************!*\
   !*** ./src/modules/scoreBody.js ***!
@@ -146,7 +156,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst userName = document.querySelector('.name');\nconst userScore = document.querySelector('.score');\n\nconst submitScore = async () => {\n  const nameValue = userName.value;\n  const scoreValue = userScore.value;\n  if (nameValue !== '' || scoreValue !== '') {\n    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ncT92zkPgEUg4RfpDGEA/scores', {\n      method: 'POST',\n      headers: {\n        'Content-Type': 'application/json',\n      },\n      body: JSON.stringify({\n        user: nameValue,\n        score: scoreValue,\n      }),\n    });\n  }\n  userName.value = '';\n  userScore.value = '';\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (submitScore);\n\n//# sourceURL=webpack://webpack/./src/modules/submitScore.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _env_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./env.js */ \"./src/modules/env.js\");\n\n\nconst userName = document.querySelector('.name');\nconst userScore = document.querySelector('.score');\n\nconst submitScore = async () => {\n  const nameValue = userName.value;\n  const scoreValue = userScore.value;\n  if (nameValue !== '' || scoreValue !== '') {\n    await fetch(`${_env_js__WEBPACK_IMPORTED_MODULE_0__.base}/${_env_js__WEBPACK_IMPORTED_MODULE_0__.gameId}`, {\n      method: 'POST',\n      headers: {\n        'Content-Type': 'application/json',\n      },\n      body: JSON.stringify({\n        user: nameValue,\n        score: scoreValue,\n      }),\n    });\n  }\n  userName.value = '';\n  userScore.value = '';\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (submitScore);\n\n//# sourceURL=webpack://webpack/./src/modules/submitScore.js?");
 
 /***/ })
 

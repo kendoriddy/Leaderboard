@@ -1,3 +1,5 @@
+import { base, gameId } from './env.js';
+
 const userName = document.querySelector('.name');
 const userScore = document.querySelector('.score');
 
@@ -5,7 +7,7 @@ const submitScore = async () => {
   const nameValue = userName.value;
   const scoreValue = userScore.value;
   if (nameValue !== '' || scoreValue !== '') {
-    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ncT92zkPgEUg4RfpDGEA/scores', {
+    await fetch(`${base}${gameId}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
