@@ -125,5 +125,6 @@ footer {
     grid-template-columns: 1fr;
     padding: 20px;
     gap: 10vw;
+    margin-bottom: 60px;
   }
 }
